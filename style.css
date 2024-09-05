@@ -1,38 +1,62 @@
 html, body {
     margin: 0;
     padding: 0;
-  }
-  body{
+}
+
+body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #ddd;
+    background: url('background1.jpg') no-repeat center center fixed; 
+    background-size: cover;
     line-height: 1.65;
     padding-bottom: 1000px;
-  }
-  .container-satu {
+}
+
+.container-satu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  
-  .kolom-utama {
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.kolom-utama {
     flex: 2;
     order: 2;
-  }
-  
-  .sidebar-satu {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-satu {
     flex: 1;
     order: 1;
-  }
-  
-  .sidebar-dua {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-dua {
     flex: 1;
     order: 3;
-  }
-
-  .container {
-    max-width: 960px;
-    margin: 0 auto;
+    background: #f9f9f9;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  }
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #333; 
+}
+
+a {
+    color: #ff7e5f; 
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; 
+}
