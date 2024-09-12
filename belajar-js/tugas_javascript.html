@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form Data Diri</h1>
+    <form id="myForm">
+        <label for="nama">Nama :</label>
+        <input type="text" id="nama" name="nama"><br><br>
+
+        <label for="alamat">Alamat :</label><br>
+        <textarea id="alamat" name="alamat" rows="4" cols="50"></textarea><br><br>
+
+        <label for="tglLahir">Tanggal Lahir :</label>
+        <input type="date" id="tglLahir" name="tglLahir"><br><br>
+
+        <label>Jenis Kelamin :</label>
+        <input type="radio" id="laki" name="jenisKelamin" value="Laki-Laki">
+        <label for="laki">Laki-Laki</label>
+        <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan">
+        <label for="perempuan">Perempuan</label><br><br>
+
+        <label>Hobby :</label>
+        <input type="checkbox" id="berenang" name="hobby" value="Berenang">
+        <label for="berenang">Berenang</label>
+        <input type="checkbox" id="berlari" name="hobby" value="Berlari">
+        <label for="berlari">Berlari</label>
+        <input type="checkbox" id="lainnya" name="hobby" value="Lainnya">
+        <label for="lainnya">Lainnya</label><br><br>
+
+        <label>Pekerjaan :</label>
+        <input type="radio" id="swasta" name="pekerjaan" value="Swasta">
+        <label for="swasta">Swasta</label>
+        <input type="radio" id="pns" name="pekerjaan" value="PNS">
+        <label for="pns">PNS</label>
+        <input type="radio" id="lainnya2" name="pekerjaan" value="Lainnya">
+        <label for="lainnya2">Lainnya</label><br><br>
+
+        <input type="checkbox" id="kirimData" name="kirimData">
+        <label for="kirimData">Check jika Anda akan mengirimkan data ini</label><br><br>
+
+        <input type="button" value="Cek!" onclick="submitForm()">
+    </form>
+
+    <script>
+        function submitForm() {
+            alert("Data yang Anda masukkan:\n" +
+                "Nama : " + document.getElementById("nama").value + "\n" +
+                "Alamat : " + document.getElementById("alamat").value + "\n" +
+            );
+        }
+    </script>
+</body>
+</html>
