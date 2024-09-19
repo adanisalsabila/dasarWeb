@@ -52,6 +52,10 @@ echo "Hasil Penugasan Perkalian : {$hasilPenugasanPerkalian} <br>";
 echo "Hasil Penugasan Pembagian : {$hasilPenugasanPembagian} <br>";
 echo "Hasil Penugasan Sisa Bagi : {$hasilPenugasanSisaBagi} <br> <br>";
 
+$hasilIdentik = $a === $b;
+$hasilTidakIdentik = $a !== $b;
 
+echo "Hasil Identik : {$hasilIdentik} <br>";
+echo "Hasil Tidak Identik : {$hasilTidakIdentik} <br> <br>";
 
 ?>
