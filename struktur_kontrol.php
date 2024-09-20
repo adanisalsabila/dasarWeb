@@ -53,4 +53,19 @@ foreach ($nilaiSiswa as $nilai) {
    }
    echo "Nilai : $nilai (Lulus) <br>";
 }
+echo "<br><br>";
+
+$nilaiSiswa = [85, 92, 78, 64, 90, 75, 88, 79, 70, 96];
+
+sort($nilaiSiswa);
+
+array_splice($nilaiSiswa, 0, 2); 
+array_splice($nilaiSiswa, -2); 
+
+$totalNilai = array_sum($nilaiSiswa);
+
+$rataRata = $totalNilai / count($nilaiSiswa);
+
+echo "Total nilai setelah mengabaikan nilai tertinggi dan terendah: $totalNilai\n";
+echo "Rata-rata nilai: $rataRata";
 ?>
