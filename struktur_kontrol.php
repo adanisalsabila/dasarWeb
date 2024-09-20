@@ -82,4 +82,12 @@ echo "Jumlah diskon: Rp " . number_format($jumlahDiskon, 0, ',', '.') . "<br>";
 echo "Harga setelah diskon: Rp " . number_format($hargaSetelahDiskon, 0, ',', '.') . "<br>";
 
 echo "<br><br>";
+
+$skorPemain = [150, 200, 180, 220];
+$totalSkor = array_sum($skorPemain);
+
+$dapatHadiah = ($totalSkor > 500) ? "YA" : "TIDAK";
+
+echo "Total skor pemain adalah: " . $totalSkor . "<br>";
+echo "Apakah pemain mendapatkan hadiah tambahan? " . $dapatHadiah;
 ?>
