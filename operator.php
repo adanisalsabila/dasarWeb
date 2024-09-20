@@ -58,4 +58,11 @@ $hasilTidakIdentik = $a !== $b;
 echo "Hasil Identik : {$hasilIdentik} <br>";
 echo "Hasil Tidak Identik : {$hasilTidakIdentik} <br> <br>";
 
+$totalKursi = 45;
+$kursiTerpakai = 28;
+$kursiKosong = $totalKursi - $kursiTerpakai;
+$persenKursiKosong = ($kursiKosong / $totalKursi) * 100;
+
+echo "Jumlah Kursi Kosong : {$kursiKosong} <br>";
+echo "Persentase Kursi Kosong : {$persenKursiKosong}% <br><br>";
 ?>
