@@ -68,4 +68,18 @@ $rataRata = $totalNilai / count($nilaiSiswa);
 
 echo "Total nilai setelah mengabaikan nilai tertinggi dan terendah: $totalNilai\n";
 echo "Rata-rata nilai: $rataRata";
+
+echo "<br><br>";
+
+$hargaAwal = 120000;
+$diskon = 20;
+
+$jumlahDiskon = ($hargaAwal * $diskon) / 100;
+$hargaSetelahDiskon = $hargaAwal - $jumlahDiskon;
+
+echo "Harga awal produk: Rp " . number_format($hargaAwal, 0, ',', '.') . "<br>";
+echo "Jumlah diskon: Rp " . number_format($jumlahDiskon, 0, ',', '.') . "<br>";
+echo "Harga setelah diskon: Rp " . number_format($hargaSetelahDiskon, 0, ',', '.') . "<br>";
+
+echo "<br><br>";
 ?>
