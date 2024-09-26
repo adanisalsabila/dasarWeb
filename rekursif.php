@@ -24,12 +24,17 @@ $menu = [
         "nama" => "Kontak"
     ]
 ];
-            function tampilkanMenuBertingkat (array $menu){
-                echo "<ul>";
-                foreach ($menu as $key => $sistem) {
-                    echo "<li>{$item['nama']}</li>";
+        function tampilkanMenuBertingkat(array $menu) {
+            echo "<ul>";
+            foreach ($menu as $item) {
+                echo "<li>{$item['nama']}";
+                if (isset($item['subMenu'])) {
+                    tampilkanMenuBertingkat($item['subMenu']);
                 }
-                echo "</ul>";
+                echo "</li>";
             }
-            tampilkanMenuBertingkat($menu);
+            echo "</ul>";
+        }
+
+        tampilkanMenuBertingkat($menu);
 ?>
