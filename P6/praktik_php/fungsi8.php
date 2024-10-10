@@ -1,5 +1,5 @@
 <?php
-// Soal11
+// Soal11 - 12
 $menu = [
     ["nama" => "Beranda"],
     [
@@ -17,8 +17,15 @@ $menu = [
 
 function tampilkanMenuBertingkat(array $menu) {
     echo "<ul>";
-    foreach ($menu as a$key => $item) {
-        echo "<li>{$item['nama']} </li>";
+    foreach ($menu as $item) {
+        echo "<li>";
+        echo $item['nama'];
+        if (isset($item['subMenu'])) {
+            echo "<ul>";
+            tampilkanMenuBertingkat($item['subMenu']); 
+            echo "</ul>";
+        }
+        echo "</li>";
     }
     echo "</ul>";
 }

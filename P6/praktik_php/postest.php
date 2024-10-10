@@ -4,7 +4,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <link rel="stylesheet" type ="text/css" href="postest.css"/>
     <script>
-        // $(document).ready(function(){
+// $(document).ready(function(){
 //   $("button").click(function(){
 //     $("p").hide();
 //   });

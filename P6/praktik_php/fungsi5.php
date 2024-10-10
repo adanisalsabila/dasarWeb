@@ -1,16 +1,17 @@
 <?php
 //soal8
-function hitungUmur($thn_lahir, $thn_sekarang) {
-    $umur = $thn_sekarang - $thn_lahir;
+function hitungUmur($thn_lahir) {
+    $tahun_sekarang = date("Y");
+    $umur = $tahun_sekarang - $thn_lahir;
     return $umur;
 }
 
 function perkenalan($nama, $thn_lahir, $salam="Assalamualaikum") {
-    echo $salam.", ";
-    echo "Perkenalkan, nama saya ".$nama."<br/>";
-    
-    echo "Saya berusia ".hitungUmur($thn_lahir, 2023)." tahun<br/>"; 
+    echo $salam . ", ";
+    echo "Perkenalkan, nama saya " . $nama . "<br/>";
+    echo "Saya berusia " . hitungUmur($thn_lahir) . " tahun<br/>";
     echo "Senang berkenalan dengan Anda<br/>";
 }
 
-perkenalan("Elok");
+perkenalan("Elok", 2004); 
+?>

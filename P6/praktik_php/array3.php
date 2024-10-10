@@ -2,7 +2,7 @@
 <!-- soal3 -->
 <html>
     <head>
-        <link rel="stylesheet" type ="text/css" href="postest.css"/>
+        <link rel="stylesheet" type ="text/css" href="style.css"/>
 </head>
 <body>
     <h2> Multidimensional Array </h2>
@@ -24,28 +24,24 @@ echo "<tr>";
 echo "<td>". $movie[0][0] . "</td>";
 echo "<td>". $movie[0][1] . "</td>";
 echo "<td>". $movie[0][2] . "</td>";
-echo "<td>". $movie[0][3] . "</td>";
 echo "</tr>";
 
 echo "<tr>";
 echo "<td>". $movie[0][0] . "</td>";
 echo "<td>". $movie[0][1] . "</td>";
 echo "<td>". $movie[0][2] . "</td>";
-echo "<td>". $movie[0][3] . "</td>";
 echo "</tr>";
 
 echo "<tr>";
 echo "<td>". $movie[1][0] . "</td>";
 echo "<td>". $movie[1][1] . "</td>";
 echo "<td>". $movie[1][2] . "</td>";
-echo "<td>". $movie[1][3] . "</td>";
 echo "</tr>";
 
 echo "<tr>";
 echo "<td>". $movie[2][0] . "</td>";
 echo "<td>". $movie[2][1] . "</td>";
 echo "<td>". $movie[2][2] . "</td>";
-echo "<td>". $movie[2][3] . "</td>";
 echo "</tr>";
 
 ?>
