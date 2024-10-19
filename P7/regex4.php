@@ -32,4 +32,24 @@ if(preg_match($pattern4, $text4,$matches)){
 }else{
     echo "Tidak ada yang cocok!";
 }
+
+echo "<br>";
+
+$pattern4 = '/go?d/';
+$text4 = 'god is good';
+if(preg_match($pattern4, $text4,$matches)){
+    echo "cocokkan: " . $matches[0];
+}else{
+    echo "Tidak ada yang cocok!";
+}
+
+echo "<br>";
+
+$pattern4 = '/go{1,2}d/';
+$text4 = 'god is good goody';
+if(preg_match_all($pattern4, $text4, $matches)){
+    print_r($matches[0]);
+} else {
+    echo "Tidak ada yang cocok!";
+}
 ?>
