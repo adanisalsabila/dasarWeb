@@ -1,0 +1,104 @@
+body {
+    font-family: 'Montserrat', 'Poppins';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('uploads/laut.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #ffe8f28b; 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #33286b; 
+    font-weight: 600; 
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #000000;
+    font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: calc(100% - 16px);
+    padding: 12px;
+    border: 1px solid #0d033c; 
+    border-radius: 8px;
+    font-size: 16px;
+    color: #000000;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #48416a;
+    background-color: #fff; 
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1c0c6b; 
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #5c4fbb3b; 
+    transform: translateY(-2px); 
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 2px solid #33286b;
+    font-size: 16px;
+}
+
+th {
+    background-color: #f9f9f9;
+    color: #33286b;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #f1a7c5;
+}
+

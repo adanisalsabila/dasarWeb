@@ -30,7 +30,6 @@
                         <h5>02.45</h5>
                     </div>
                     <div class="player-controls2">
-
                         <button class="previous-btn">↻</button>
                         <button class="play-btn" onclick="changeButtonText(this)">||</button>
                         <button class="next-btn">↺</button>
@@ -75,7 +74,6 @@
                         ['title' => 'flying with me', 'image' => 'uploads/pl1.jpg'],
                         ['title' => 'late night', 'image' => 'uploads/drive.jpg'],
                         ['title' => 'over 911', 'image' => 'uploads/dark.jpg'],
-
                     ];
                     foreach ($playlists as $playlist): ?>
                         <div class="playlist-item"
